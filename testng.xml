@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="vtigercrm5suite" verbose="1">
+
+	<test thread-count="5" name="Test">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="userName" value="admin" />
+		<parameter name="password" value="admin" />
+
+		<classes>
+			<class name="org.eva.vtigercrm5.marketingtestscripts.MarketingAccountTestScripts">
+				<methods>
+			 <include
+			 name="verifyVT003SearchAccount"/>
+				</methods>
+				</class>
+		</classes>
+	</test>
+</suite>  
